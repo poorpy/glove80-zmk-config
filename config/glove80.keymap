@@ -283,6 +283,20 @@ endif {
 /* Automatically generated keymap */
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_lh_ralt {
+            bindings = <&kp RALT>;
+            key-positions = <35 37>;
+        };
+
+        combo_rh_ralt {
+            bindings = <&kp RALT>;
+            key-positions = <41 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
