@@ -291,13 +291,13 @@
         combo_lh_ralt {
             bindings = <&kp RALT>;
             key-positions = <35 37>;
-            timeout-ms = 40;
+            timeout-ms = <40>;
         };
 
         combo_rh_ralt {
             bindings = <&kp RALT>;
             key-positions = <41 43>;
-            timeout-ms = 40;
+            timeout-ms = <40>;
         };
     };
 
