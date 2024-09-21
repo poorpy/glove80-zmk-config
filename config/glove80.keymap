@@ -29,12 +29,12 @@
 
 #define LAYER_Lower 0
 
-#endif 
+#
 
+endif {
+    /* Keymap usualy messes endif above and merges it with line below */
 
-/* Keymap usualy messes endif above and merges it with line below */
-
-/ {
+    /
 
     /* Custom Device-tree */
     /* Glove80 system behavior & macros */
@@ -293,7 +293,6 @@
     flavor = "hold-preferred";
 };
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -314,23 +313,23 @@
 
         layer_Base {
             bindings = <
-&kp F1                &kp F2       &kp F3       &kp F4        &kp F5                                                                                       &kp F6        &kp F7        &kp F8       &kp F9          &kp F10
-&none                 &none        &none        &none         &none         &none                                                                   &none  &none         &none         &none        &none           &none
-&kp TAB               &kp Q        &kp W        &kp E         &kp R         &kp T                                                                   &kp Y  &kp U         &kp I         &kp O        &kp P           &kp BSLH
-&kp ESC               &hrm LGUI A  &hrm LALT S  &hrm LSHFT D  &hrm LCTRL F  &kp G                                                                   &kp H  &hrm LCTRL J  &hrm RSHFT K  &hrm LALT L  &hrm LGUI SEMI  &kp SQT
-&kp GRAVE             &kp Z        &kp X        &kp C         &kp V         &kp B  &kp LSHFT  &kp LGUI   &sl 1     &sl 1     &kp LGUI    &kp RSHFT  &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp PG_UP
-&magic LAYER_Magic 0  &kp HOME     &kp END      &kp LEFT      &kp RIGHT            &kp SPACE  &lt 1 DEL  &kp RALT  &kp RALT  &lt 1 BSPC  &kp RET           &kp UP        &kp DOWN      &kp LBKT     &kp RBKT        &kp PG_DN
+&kp F1                &kp F2       &kp F3       &kp F4        &kp F5                                                                                      &kp F6        &kp F7        &kp F8       &kp F9          &kp F10
+&none                 &none        &none        &none         &none         &none                                                                  &none  &none         &none         &none        &none           &none
+&kp TAB               &kp Q        &kp W        &kp E         &kp R         &kp T                                                                  &kp Y  &kp U         &kp I         &kp O        &kp P           &kp BSLH
+&kp ESC               &hrm LGUI A  &hrm LALT S  &hrm LSHFT D  &hrm LCTRL F  &kp G                                                                  &kp H  &hrm LCTRL J  &hrm RSHFT K  &hrm LALT L  &hrm LGUI SEMI  &kp SQT
+&kp GRAVE             &kp Z        &kp X        &kp C         &kp V         &kp B  &kp LSHFT  &kp LGUI  &sl 1     &sl 1     &kp LGUI    &kp RSHFT  &kp N  &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp PG_UP
+&magic LAYER_Magic 0  &kp HOME     &kp END      &kp LEFT      &kp RIGHT            &kp SPACE  &mo 1     &kp RALT  &kp RALT  &lt 1 BSPC  &kp RET           &kp UP        &kp DOWN      &kp LBKT     &kp RBKT        &kp PG_DN
             >;
         };
 
         layer_Lower {
             bindings = <
-&kp C_BRI_DN          &kp C_BRI_UP        &kp C_PREV          &kp C_NEXT            &kp C_PP                                                                                     &kp C_MUTE     &kp C_VOL_DN         &kp C_VOL_UP          &none                  &trans
-&trans                &none               &none               &none                 &none                &none                                                        &none      &none          &none                &none                 &none                  &trans
-&trans                &kp EXCLAMATION     &kp AT              &kp HASH              &kp DOLLAR           &kp PERCENT                                                  &kp CARET  &kp AMPERSAND  &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans                &hrm LGUI NUMBER_1  &hrm LALT NUMBER_2  &hrm LSHIFT NUMBER_3  &hrm LCTRL NUMBER_4  &kp N5                                                       &kp N6     &hrm LCTRL N7  &hrm RIGHT_SHIFT N8  &hrm RIGHT_ALT N9     &hrm LEFT_GUI N0       &trans
-&trans                &kp EQUAL           &kp LT              &kp LPAR              &kp LBRC             &kp LBKT     &trans  &trans  &to 0   &to 0   &trans  &trans  &kp RBKT   &kp RBRC       &kp RPAR             &kp GT                &kp MINUS              &trans
-&magic LAYER_Magic 0  &kp CAPS            &kp INS             &none                 &none                             &trans  &trans  &trans  &trans  &trans  &trans             &none          &none                &none                 &none                  &trans
+&kp C_BRI_DN          &kp C_BRI_UP        &kp C_PREV          &kp C_NEXT            &kp C_PP                                                                                      &kp C_MUTE     &kp C_VOL_DN         &kp C_VOL_UP          &none                  &trans
+&trans                &none               &none               &none                 &none                &none                                                         &none      &none          &none                &none                 &none                  &trans
+&trans                &kp EXCLAMATION     &kp AT              &kp HASH              &kp DOLLAR           &kp PERCENT                                                   &kp CARET  &kp AMPERSAND  &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans                &hrm LGUI NUMBER_1  &hrm LALT NUMBER_2  &hrm LSHIFT NUMBER_3  &hrm LCTRL NUMBER_4  &kp N5                                                        &kp N6     &hrm LCTRL N7  &hrm RIGHT_SHIFT N8  &hrm RIGHT_ALT N9     &hrm LEFT_GUI N0       &trans
+&trans                &kp EQUAL           &kp LT              &kp LPAR              &kp LBRC             &kp LBKT     &trans  &trans  &to 0   &to 0   &trans   &trans  &kp RBKT   &kp RBRC       &kp RPAR             &kp GT                &kp MINUS              &trans
+&magic LAYER_Magic 0  &kp CAPS            &kp INS             &none                 &none                             &trans  &trans  &trans  &trans  &kp DEL  &trans             &none          &none                &none                 &none                  &trans
             >;
         };
 
