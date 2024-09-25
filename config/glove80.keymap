@@ -29,11 +29,13 @@
 
 #define LAYER_Lower 0
 
-#endif 
+#
 
-/* Keymap usualy messes endif above and merges it with line below */
+endif {
+    /* Keymap usualy messes endif above and merges it with line below */
 
-/ {
+    /
+
     /* Custom Device-tree */
     /* Glove80 system behavior & macros */
 
@@ -326,8 +328,8 @@
 &trans                &none               &none               &none                 &none                &none                                                         &none      &none          &none                &none                 &none                  &trans
 &trans                &kp EXCLAMATION     &kp AT              &kp HASH              &kp DOLLAR           &kp PERCENT                                                   &kp CARET  &kp AMPERSAND  &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans                &hrm LGUI NUMBER_1  &hrm LALT NUMBER_2  &hrm LSHIFT NUMBER_3  &hrm LCTRL NUMBER_4  &kp N5                                                        &kp N6     &hrm LCTRL N7  &hrm RIGHT_SHIFT N8  &hrm RIGHT_ALT N9     &hrm LEFT_GUI N0       &trans
-&trans                &kp EQUAL           &kp LT              &kp LPAR              &kp LBRC             &kp LBKT     &trans  &trans  &to 0   &to 0   &trans   &trans  &kp RBKT   &kp RBRC       &kp RPAR             &kp GT                &kp MINUS              &trans
-&magic LAYER_Magic 0  &kp CAPS            &kp INS             &none                 &none                             &trans  &trans  &trans  &trans  &kp DEL  &trans             &none          &none                &none                 &none                  &trans
+&trans                &kp EQUAL           &kp LT              &kp LPAR              &kp LBRC             &kp LBKT     &trans  &trans  &to 0   &to 0   &kp DEL  &trans  &kp RBKT   &kp RBRC       &kp RPAR             &kp GT                &kp MINUS              &trans
+&magic LAYER_Magic 0  &kp CAPS            &kp INS             &none                 &none                             &trans  &trans  &trans  &trans  &trans   &trans             &none          &none                &none                 &none                  &trans
             >;
         };
 
